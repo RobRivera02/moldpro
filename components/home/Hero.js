@@ -12,7 +12,7 @@ export function Hero() {
 				<p className="font-tertiary text-xl md:text-2xl max-w-2xl text-[#FFE4C7]/90">
 					Proveeduría para bebidas - Tu socio confiable en el mundo del café
 				</p>
-				<Button className="bg-[#2EBFA5] hover:bg-[#2EBFA5]/90 text-white text-lg px-8 py-6 rounded-full">
+				<Button className="bg-lightSea hover:bg-lightSea/90 text-white text-lg px-8 py-6 rounded-full">
 					Descubre Más
 				</Button>
 			</div>

@@ -16,10 +16,10 @@ const navigation = [
 
 export default function Footer() {
 	return (
-		<footer className="bg-[#4284BA] text-white py-12">
+		<footer className="bg-azure text-white py-12">
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row justify-between items-center">
-					<div className="text-[#FFE4C7] font-primary text-2xl mb-4 md:mb-0">
+					<div className="text-bisque font-primary text-2xl mb-4 md:mb-0">
 						Círculo Cafetero
 					</div>
 					<nav className="flex gap-8 font-tertiary">
@@ -27,13 +27,13 @@ export default function Footer() {
 							<a
 								key={item.name}
 								href={item.href}
-								className="hover:text-[#FFE4C7] transition-colors">
+								className="hover:text-bisque transition-colors">
 								{item.name}
 							</a>
 						))}
 					</nav>
 				</div>
-				<div className="mt-8 text-center text-[#FFE4C7]/80 font-tertiary text-sm">
+				<div className="mt-8 text-center text-bisque/80 font-tertiary text-sm">
 					© {new Date().getFullYear()} Círculo Cafetero. Todos los derechos
 					reservados.
 				</div>
