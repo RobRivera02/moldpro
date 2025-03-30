@@ -64,14 +64,14 @@ export function Contact() {
 							<div className="bg-[bisque]/5 backdrop-blur-sm border border-[bisque]/10 rounded-lg p-8 hover:bg-[bisque]/10 transition-all duration-300">
 								<div className="mb-6">
 									<info.icon className="w-12 h-12 text-[bisque] mb-4" />
-									<h3 className="text-[bisque] font-secondary text-2xl mb-2">
+									<h3 className="text-[bisque] font-quaternary text-2xl mb-2">
 										{info.title}
 									</h3>
-									<p className="text-[bisque]/70 font-tertiary">
+									<p className="text-[bisque]/70 font-quaternary">
 										{info.description}
 									</p>
 									{info.details && (
-										<p className="text-[bisque]/70 font-tertiary mt-1">
+										<p className="text-[bisque]/70 font-quaternary mt-1">
 											{info.details}
 										</p>
 									)}
@@ -79,7 +79,7 @@ export function Contact() {
 								{info.action && (
 									<a
 										href={info.action}
-										className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-tertiary">
+										className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-quaternary">
 										Contactar
 										<span className="ml-2">→</span>
 									</a>
@@ -97,7 +97,7 @@ export function Contact() {
 						href="https://wa.me/526142550283"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#22c55e] text-white font-tertiary text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105">
+						className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#22c55e] text-white font-quaternary text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105">
 						<MessageSquare className="w-6 h-6" />
 						Contáctanos por WhatsApp
 					</a>
