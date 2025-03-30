@@ -61,9 +61,10 @@ module.exports = {
 				gradient: "linear-gradient(60deg, #4284BA, #FFE4C7, #2EBFA5, #427850)",
 			},
 			fontFamily: {
-				primary: ["MV Boli", "sans-serif"],
-				secondary: ["Agrandir Variable", "sans-serif"],
+				primary: ["Agrandir", "sans-serif"],
+				secondary: ["MV Boli Variable", "sans-serif"],
 				tertiary: ["Montserrat", "sans-serif"],
+				quaternary: ["Cascadia Code", "sans-serif"],
 			},
 			borderRadius: {
 				lg: "var(--radius)",

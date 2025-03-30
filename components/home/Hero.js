@@ -35,7 +35,7 @@ export function Hero() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8 }}
-							className="font-primary text-6xl md:text-8xl text-[#FFE4C7] drop-shadow-lg relative">
+							className="font-primary text-6xl md:text-8xl text-[bisque] drop-shadow-lg relative">
 							Círculo Cafetero
 							<span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-lightSea rounded-full" />
 						</motion.h1>
@@ -44,7 +44,7 @@ export function Hero() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.2 }}
-							className="font-tertiary text-xl md:text-3xl max-w-2xl text-[#FFE4C7]/90 drop-shadow-md">
+								className="font-tertiary text-xl md:text-3xl max-w-2xl text-[bisque]/90 drop-shadow-md">
 							Proveeduría para bebidas - Tu socio confiable en el mundo del café
 						</motion.p>
 
@@ -84,7 +84,7 @@ export function Hero() {
 						ease: "easeInOut",
 					}}
 					className="relative">
-					<div className="w-8 h-8 border-r-4 border-b-4 border-[#FFE4C7] rotate-45 transform -translate-y-1/2" />
+					<div className="w-8 h-8 border-r-4 border-b-4 border-[bisque] rotate-45 transform -translate-y-1/2" />
 				</motion.div>
 			</motion.div>
 		</section>

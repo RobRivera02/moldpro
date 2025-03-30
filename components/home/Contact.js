@@ -44,11 +44,11 @@ export function Contact() {
 					viewport={{ once: true }}
 					transition={{ duration: 0.8 }}
 					className="text-center mb-20">
-					<h2 className="text-[#FFE4C7] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
+					<h2 className="text-[bisque] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
 						Contáctanos
 					</h2>
-					<div className="w-24 h-[1px] bg-[#FFE4C7]/30 mx-auto mb-8" />
-					<p className="text-[#FFE4C7]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
+					<div className="w-24 h-[1px] bg-[bisque]/30 mx-auto mb-8" />
+					<p className="text-[bisque]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						¿Listo para llevar tu negocio al siguiente nivel? Estamos aquí para
 						ayudarte a hacer realidad tu visión cafetera.
 					</p>
@@ -61,17 +61,17 @@ export function Contact() {
 							{...fadeInUp}
 							transition={{ duration: 0.6, delay: index * 0.2 }}
 							className="relative group">
-							<div className="bg-[#FFE4C7]/5 backdrop-blur-sm border border-[#FFE4C7]/10 rounded-lg p-8 hover:bg-[#FFE4C7]/10 transition-all duration-300">
+							<div className="bg-[bisque]/5 backdrop-blur-sm border border-[bisque]/10 rounded-lg p-8 hover:bg-[bisque]/10 transition-all duration-300">
 								<div className="mb-6">
-									<info.icon className="w-12 h-12 text-[#FFE4C7] mb-4" />
-									<h3 className="text-[#FFE4C7] font-secondary text-2xl mb-2">
+									<info.icon className="w-12 h-12 text-[bisque] mb-4" />
+									<h3 className="text-[bisque] font-secondary text-2xl mb-2">
 										{info.title}
 									</h3>
-									<p className="text-[#FFE4C7]/70 font-tertiary">
+									<p className="text-[bisque]/70 font-tertiary">
 										{info.description}
 									</p>
 									{info.details && (
-										<p className="text-[#FFE4C7]/70 font-tertiary mt-1">
+										<p className="text-[bisque]/70 font-tertiary mt-1">
 											{info.details}
 										</p>
 									)}
@@ -79,7 +79,7 @@ export function Contact() {
 								{info.action && (
 									<a
 										href={info.action}
-										className="inline-flex items-center text-[#FFE4C7]/90 hover:text-[#FFE4C7] transition-colors font-tertiary">
+										className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-tertiary">
 										Contactar
 										<span className="ml-2">→</span>
 									</a>

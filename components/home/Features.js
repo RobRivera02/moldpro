@@ -93,11 +93,11 @@ export function Features() {
 					transition={{ duration: 0.8 }}
 					viewport={{ once: true }}
 					className="text-center mb-24">
-					<h2 className="text-[#FFE4C7] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
+					<h2 className="text-[bisque] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
 						Nuestros Servicios
 					</h2>
-					<div className="w-24 h-[1px] bg-[#FFE4C7]/30 mx-auto mb-8" />
-					<p className="text-[#FFE4C7]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
+					<div className="w-24 h-[1px] bg-[bisque]/30 mx-auto mb-8" />
+					<p className="text-[bisque]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						Descubre cómo podemos ayudarte a llevar tu negocio cafetero al
 						siguiente nivel con nuestros servicios integrales.
 					</p>
@@ -119,19 +119,19 @@ export function Features() {
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
 						<div className="absolute bottom-0 left-0 p-10 w-full">
-							<MainFeature.icon className="w-12 h-12 text-[#FFE4C7] mb-6" />
-							<h3 className="text-[#FFE4C7] font-secondary text-3xl mb-4 tracking-wide">
+							<MainFeature.icon className="w-12 h-12 text-[bisque] mb-6" />
+							<h3 className="text-[bisque] font-secondary text-3xl mb-4 tracking-wide">
 								{MainFeature.title}
 							</h3>
-							<p className="text-[#FFE4C7]/90 font-tertiary text-lg mb-6 leading-relaxed max-w-xl">
+							<p className="text-[bisque]/90 font-tertiary text-lg mb-6 leading-relaxed max-w-xl">
 								{MainFeature.description}
 							</p>
 							<ul className="space-y-3">
 								{MainFeature.details.map((detail, idx) => (
 									<li
 										key={idx}
-										className="flex items-center text-[#FFE4C7]/80 font-tertiary">
-										<span className="w-1 h-1 bg-[#FFE4C7]/60 rounded-full mr-3" />
+										className="flex items-center text-[bisque]/80 font-tertiary">
+										<span className="w-1 h-1 bg-[bisque]/60 rounded-full mr-3" />
 										{detail}
 									</li>
 								))}
@@ -154,11 +154,11 @@ export function Features() {
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
 						<div className="absolute bottom-0 left-0 p-8 w-full">
-							<SecondaryFeature.icon className="w-10 h-10 text-[#FFE4C7] mb-4" />
-							<h3 className="text-[#FFE4C7] font-secondary text-2xl mb-3 tracking-wide">
+							<SecondaryFeature.icon className="w-10 h-10 text-[bisque] mb-4" />
+							<h3 className="text-[bisque] font-secondary text-2xl mb-3 tracking-wide">
 								{SecondaryFeature.title}
 							</h3>
-							<p className="text-[#FFE4C7]/90 font-tertiary mb-4 leading-relaxed">
+							<p className="text-[bisque]/90 font-tertiary mb-4 leading-relaxed">
 								{SecondaryFeature.description}
 							</p>
 						</div>
@@ -181,11 +181,11 @@ export function Features() {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
 							<div className="absolute bottom-0 left-0 p-8 w-full">
-								<feature.icon className="w-10 h-10 text-[#FFE4C7] mb-4" />
-								<h3 className="text-[#FFE4C7] font-secondary text-2xl mb-3 tracking-wide">
+								<feature.icon className="w-10 h-10 text-[bisque] mb-4" />
+								<h3 className="text-[bisque] font-secondary text-2xl mb-3 tracking-wide">
 									{feature.title}
 								</h3>
-								<p className="text-[#FFE4C7]/90 font-tertiary leading-relaxed">
+								<p className="text-[bisque]/90 font-tertiary leading-relaxed">
 									{feature.description}
 								</p>
 							</div>
