@@ -70,7 +70,7 @@ export function Clients() {
 										fill
 										className="object-cover"
 									/>
-									<div className="absolute inset-0 bg-gradient-to-t from-amazon/80 to-transparent" />
+									<div className="absolute inset-0 bg-gradient-to-t from-amazon/60 to-transparent" />
 								</div>
 								<div className="p-6">
 									<h3 className="text-[bisque] font-quaternary text-xl mb-3">
