@@ -36,7 +36,7 @@ export function Hero() {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8 }}
 							className="font-primary text-6xl md:text-8xl text-[bisque] drop-shadow-lg relative">
-							Círculo Cafetero
+							Tierra y Café
 							<span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-lightSea rounded-full" />
 						</motion.h1>
 
