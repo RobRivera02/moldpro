@@ -50,14 +50,14 @@ const features = [
 			"https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 	},
 	{
-		title: "Soporte Dedicado",
+		title: "Diseño de Menú",
 		description:
-			"Equipo especializado a tu disposición para resolver cualquier consulta o necesidad que tengas.",
+			"Diseño de menús personalizados para tu negocio, adaptados a tus necesidades y preferencias.",
 		icon: Users,
 		details: [
-			"Asistencia personalizada",
-			"Capacitación incluida",
-			"Canales múltiples",
+			"Diseño de menús personalizados",
+			"Diseño de menús para eventos",
+			"Diseño de menús para cafeterías",
 		],
 		image:
 			"https://images.unsplash.com/photo-1537084278693-d597e79f2939?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

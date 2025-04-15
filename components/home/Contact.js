@@ -11,7 +11,6 @@ export function Contact() {
 			description: "Estamos disponibles para atenderte",
 			action: "tel:+526142550283",
 		},
-		
 		{
 			icon: Clock,
 			title: "Horario",
@@ -49,35 +48,37 @@ export function Contact() {
 					</p>
 				</motion.div>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 					{contactInfo.map((info, index) => (
 						<motion.div
 							key={index}
 							{...fadeInUp}
 							transition={{ duration: 0.6, delay: index * 0.2 }}
 							className="relative group">
-							<div className="bg-[bisque]/5 backdrop-blur-sm border border-[bisque]/10 rounded-lg p-8 hover:bg-[bisque]/10 transition-all duration-300">
-								<div className="mb-6">
-									<info.icon className="w-12 h-12 text-[bisque] mb-4" />
-									<h3 className="text-[bisque] font-quaternary text-2xl mb-2">
+							<div className="bg-[bisque]/5 backdrop-blur-sm border border-[bisque]/10 rounded-lg p-8 hover:bg-[bisque]/10 transition-all duration-300 h-full">
+								<div className="flex flex-col items-center text-center">
+									<info.icon className="w-16 h-16 text-[bisque] mb-6" />
+									<h3 className="text-[bisque] font-quaternary text-2xl mb-3">
 										{info.title}
 									</h3>
-									<p className="text-[bisque]/70 font-quaternary">
+									<p className="text-[bisque]/70 font-quaternary mb-2">
 										{info.description}
 									</p>
 									{info.details && (
-										<p className="text-[bisque]/70 font-quaternary mt-1">
+										<p className="text-[bisque]/70 font-quaternary">
 											{info.details}
 										</p>
 									)}
 								</div>
 								{info.action && (
-									<a
-										href={info.action}
-										className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-quaternary">
-										Contactar
-										<span className="ml-2">→</span>
-									</a>
+									<div className="mt-6 text-center">
+										<a
+											href={info.action}
+											className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-quaternary">
+											Contactar
+											<span className="ml-2">→</span>
+										</a>
+									</div>
 								)}
 							</div>
 						</motion.div>
