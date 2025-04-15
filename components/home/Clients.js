@@ -22,7 +22,7 @@ export function Clients() {
 		},
 		{
 			name: "Bares y Pubs",
-			description: "Creamos experiencias únicas con nuestro café para eventos corporativos, bodas y celebraciones especiales.",
+			description: "Creamos experiencias únicas con nuestro café.",
 			image: "/images/clients/eventos.jpg",
 		},
 	];
