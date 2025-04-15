@@ -19,10 +19,10 @@ export default function Footer() {
 		<footer className="bg-azure text-white py-12">
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row justify-between items-center">
-					<div className="text-bisque font-secondary text-2xl mb-4 md:mb-0">
+					<div className="text-bisque font-quaternary text-2xl mb-4 md:mb-0">
 						Círculo Cafetero
 					</div>
-					<nav className="flex gap-8 font-secondary">
+					<nav className="flex gap-8 font-quaternary">
 						{navigation.map((item) => (
 							<a
 								key={item.name}
@@ -33,7 +33,7 @@ export default function Footer() {
 						))}
 					</nav>
 				</div>
-				<div className="mt-8 text-center text-bisque/80 font-secondary text-sm">
+				<div className="mt-8 text-center text-bisque/80 font-quaternary text-sm">
 					© {new Date().getFullYear()} Círculo Cafetero. Todos los derechos
 					reservados.
 				</div>

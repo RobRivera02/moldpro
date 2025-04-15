@@ -11,12 +11,7 @@ export function Contact() {
 			description: "Estamos disponibles para atenderte",
 			action: "tel:+526142550283",
 		},
-		{
-			icon: Mail,
-			title: "Escríbenos",
-			description: "Te responderemos a la brevedad",
-			action: "mailto:contacto@circulocafe.com",
-		},
+		
 		{
 			icon: Clock,
 			title: "Horario",
