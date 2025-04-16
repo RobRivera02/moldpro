@@ -61,10 +61,10 @@ module.exports = {
 				gradient: "linear-gradient(60deg, #4284BA, #FFE4C7, #2EBFA5, #427850)",
 			},
 			fontFamily: {
-				primary: ["Agrandir", "sans-serif"],
-				secondary: ["MV Boli Variable", "sans-serif"],
-				tertiary: ["Montserrat", "sans-serif"],
-				quaternary: ["Cascadia Code", "sans-serif"],
+				primary: ["system-ui", "sans-serif"],
+				secondary: ["Georgia", "serif"],
+				tertiary: ["var(--font-montserrat)", "sans-serif"],
+				quaternary: ["Menlo", "monospace"],
 			},
 			borderRadius: {
 				lg: "var(--radius)",
