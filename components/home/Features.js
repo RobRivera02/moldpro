@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Coffee, Wrench, Lightbulb, Clock, Users, Heart } from "lucide-react";
+import { Coffee, Wrench, Lightbulb, Clock, Users, Heart, Book } from "lucide-react";
 import Image from "next/image";
 
 const features = [
@@ -53,7 +53,7 @@ const features = [
 		title: "Diseño de Menú",
 		description:
 			"Diseño de menús personalizados para tu negocio, adaptados a tus necesidades y preferencias.",
-		icon: Users,
+		icon: Book,
 		details: [
 			"Diseño de menús personalizados",
 			"Diseño de menús para eventos",

@@ -47,12 +47,9 @@ export function Clients() {
 					transition={{ duration: 0.8 }}
 					className="text-center mb-20">
 					<h2 className="text-[bisque] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
-						Target
+						Dirigido a...
 					</h2>
-					<div className="w-24 h-[1px] bg-[bisque]/30 mx-auto mb-8" />
-					<p className="text-[bisque]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
-						Comparte nuestra pasión por el café de calidad
-					</p>
+					
 				</motion.div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
