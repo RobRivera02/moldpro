@@ -27,7 +27,7 @@ export function Contact() {
 	};
 
 	return (
-		<section className="bg-amazon relative py-32 overflow-hidden">
+		<section className="bg-white relative py-32 overflow-hidden">
 			{/* Background Pattern */}
 			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
 
@@ -38,11 +38,11 @@ export function Contact() {
 					viewport={{ once: true }}
 					transition={{ duration: 0.8 }}
 					className="text-center mb-20">
-					<h2 className="text-[bisque] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
+					<h2 className="text-black text-5xl md:text-6xl font-primary mb-6 tracking-wide drop-shadow-sm">
 						Contáctanos
 					</h2>
-					<div className="w-24 h-[1px] bg-[bisque]/30 mx-auto mb-8" />
-					<p className="text-[bisque]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
+					<div className="w-24 h-[2px] bg-gradient-to-r from-black/5 via-black/30 to-black/5 mx-auto mb-8" />
+					<p className="text-black/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						¿Listo para llevar tu negocio al siguiente nivel? Estamos aquí para
 						ayudarte a hacer realidad tu visión cafetera.
 					</p>
@@ -55,17 +55,19 @@ export function Contact() {
 							{...fadeInUp}
 							transition={{ duration: 0.6, delay: index * 0.2 }}
 							className="relative group">
-							<div className="bg-[bisque]/5 backdrop-blur-sm border border-[bisque]/10 rounded-lg p-8 hover:bg-[bisque]/10 transition-all duration-300 h-full">
+							<div className="bg-black/5 backdrop-blur-sm border border-black/10 rounded-xl p-8 hover:bg-black/10 transition-all duration-300 h-full shadow-md hover:shadow-lg transform hover:translate-y-[-4px]">
 								<div className="flex flex-col items-center text-center">
-									<info.icon className="w-16 h-16 text-[bisque] mb-6" />
-									<h3 className="text-[bisque] font-quaternary text-2xl mb-3">
+									<div className="w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-amazon to-amazon/80 shadow-md mb-6">
+										<info.icon className="w-8 h-8 text-white" />
+									</div>
+									<h3 className="text-black font-quaternary text-2xl mb-3 tracking-wide">
 										{info.title}
 									</h3>
-									<p className="text-[bisque]/70 font-quaternary mb-2">
+									<p className="text-black/70 font-quaternary mb-2">
 										{info.description}
 									</p>
 									{info.details && (
-										<p className="text-[bisque]/70 font-quaternary">
+										<p className="text-black/70 font-quaternary">
 											{info.details}
 										</p>
 									)}
@@ -74,9 +76,9 @@ export function Contact() {
 									<div className="mt-6 text-center">
 										<a
 											href={info.action}
-											className="inline-flex items-center text-[bisque]/90 hover:text-[bisque] transition-colors font-quaternary">
+											className="inline-flex items-center text-amazon hover:text-amazon/80 transition-colors font-quaternary group">
 											Contactar
-											<span className="ml-2">→</span>
+											<span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
 										</a>
 									</div>
 								)}
@@ -93,7 +95,7 @@ export function Contact() {
 						href="https://wa.me/526142550283"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#22c55e] text-white font-quaternary text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105">
+						className="inline-flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#22c55e] hover:to-[#128C7E] text-white font-quaternary text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
 						<MessageSquare className="w-6 h-6" />
 						Contáctanos por WhatsApp
 					</a>

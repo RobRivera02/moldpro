@@ -83,7 +83,7 @@ export function Features() {
 	const GridFeatures = features.slice(2);
 
 	return (
-		<section className="bg-[#2C1810] py-32 relative">
+		<section className="bg-white py-32 relative">
 			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
 
 			<div className="container mx-auto px-6 relative">
@@ -93,11 +93,11 @@ export function Features() {
 					transition={{ duration: 0.8 }}
 					viewport={{ once: true }}
 					className="text-center mb-24">
-					<h2 className="text-[bisque] text-5xl md:text-6xl font-primary mb-6 tracking-wide">
+					<h2 className="text-black text-5xl md:text-6xl font-primary mb-6 tracking-wide drop-shadow-sm">
 						Nuestros Servicios
 					</h2>
-					<div className="w-24 h-[1px] bg-[bisque]/30 mx-auto mb-8" />
-					<p className="text-[bisque]/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
+					<div className="w-24 h-[2px] bg-gradient-to-r from-black/5 via-black/30 to-black/5 mx-auto mb-8" />
+					<p className="text-black/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						Descubre cómo podemos ayudarte a llevar tu negocio cafetero al
 						siguiente nivel con nuestros servicios integrales.
 					</p>
@@ -110,32 +110,35 @@ export function Features() {
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.6 }}
 						viewport={{ once: true }}
-						className="lg:col-span-8 relative group overflow-hidden min-h-[600px] rounded-sm">
+						className="lg:col-span-8 relative group overflow-hidden min-h-[600px] rounded-xl shadow-lg hover:shadow-xl transition-all duration-500">
 						<Image
 							src={MainFeature.image}
 							alt={MainFeature.title}
 							fill
-							className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85]"
+							className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85] hover:brightness-[0.95]"
+							quality={90}
 						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
-						<div className="absolute bottom-0 left-0 p-10 w-full">
-							<MainFeature.icon className="w-12 h-12 text-[bisque] mb-6" />
-							<h3 className="text-[bisque] font-secondary text-3xl mb-4 tracking-wide">
-								{MainFeature.title}
-							</h3>
-							<p className="text-[bisque]/90 font-tertiary text-lg mb-6 leading-relaxed max-w-xl">
-								{MainFeature.description}
-							</p>
-							<ul className="space-y-3">
-								{MainFeature.details.map((detail, idx) => (
-									<li
-										key={idx}
-										className="flex items-center text-[bisque]/80 font-tertiary">
-										<span className="w-1 h-1 bg-[bisque]/60 rounded-full mr-3" />
-										{detail}
-									</li>
-								))}
-							</ul>
+						<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-60 transition-opacity duration-500" />
+						<div className="absolute bottom-0 left-0 p-10 w-full backdrop-blur-[1px]">
+							<div className="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+								<MainFeature.icon className="w-12 h-12 text-white mb-6" />
+								<h3 className="text-white font-secondary text-3xl mb-4 tracking-wide">
+									{MainFeature.title}
+								</h3>
+								<p className="text-white/90 font-tertiary text-lg mb-6 leading-relaxed max-w-xl">
+									{MainFeature.description}
+								</p>
+								<ul className="space-y-3">
+									{MainFeature.details.map((detail, idx) => (
+										<li
+											key={idx}
+											className="flex items-center text-white/80 font-tertiary">
+											<span className="w-1 h-1 bg-white/60 rounded-full mr-3" />
+											{detail}
+										</li>
+									))}
+								</ul>
+							</div>
 						</div>
 					</motion.div>
 
@@ -145,22 +148,25 @@ export function Features() {
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.6, delay: 0.2 }}
 						viewport={{ once: true }}
-						className="lg:col-span-4 relative group overflow-hidden min-h-[600px] rounded-sm">
+						className="lg:col-span-4 relative group overflow-hidden min-h-[600px] rounded-xl shadow-lg hover:shadow-xl transition-all duration-500">
 						<Image
 							src={SecondaryFeature.image}
 							alt={SecondaryFeature.title}
 							fill
-							className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85]"
+							className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85] hover:brightness-[0.95]"
+							quality={90}
 						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
+						<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-60 transition-opacity duration-500" />
 						<div className="absolute bottom-0 left-0 p-8 w-full">
-							<SecondaryFeature.icon className="w-10 h-10 text-[bisque] mb-4" />
-							<h3 className="text-[bisque] font-secondary text-2xl mb-3 tracking-wide">
-								{SecondaryFeature.title}
-							</h3>
-							<p className="text-[bisque]/90 font-tertiary mb-4 leading-relaxed">
-								{SecondaryFeature.description}
-							</p>
+							<div className="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+								<SecondaryFeature.icon className="w-10 h-10 text-white mb-4" />
+								<h3 className="text-white font-secondary text-2xl mb-3 tracking-wide">
+									{SecondaryFeature.title}
+								</h3>
+								<p className="text-white/90 font-tertiary mb-4 leading-relaxed">
+									{SecondaryFeature.description}
+								</p>
+							</div>
 						</div>
 					</motion.div>
 
@@ -172,22 +178,25 @@ export function Features() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.6, delay: 0.1 * (index + 2) }}
 							viewport={{ once: true }}
-							className="lg:col-span-6 relative group overflow-hidden min-h-[400px] rounded-sm">
+							className="lg:col-span-6 relative group overflow-hidden min-h-[400px] rounded-xl shadow-lg hover:shadow-xl transition-all duration-500">
 							<Image
 								src={feature.image}
 								alt={feature.title}
 								fill
-								className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85]"
+								className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-[0.85] hover:brightness-[0.95]"
+								quality={90}
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
+							<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-60 transition-opacity duration-500" />
 							<div className="absolute bottom-0 left-0 p-8 w-full">
-								<feature.icon className="w-10 h-10 text-[bisque] mb-4" />
-								<h3 className="text-[bisque] font-secondary text-2xl mb-3 tracking-wide">
-									{feature.title}
-								</h3>
-								<p className="text-[bisque]/90 font-tertiary leading-relaxed">
-									{feature.description}
-								</p>
+								<div className="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+									<feature.icon className="w-10 h-10 text-white mb-4" />
+									<h3 className="text-white font-secondary text-2xl mb-3 tracking-wide">
+										{feature.title}
+									</h3>
+									<p className="text-white/90 font-tertiary leading-relaxed">
+										{feature.description}
+									</p>
+								</div>
 							</div>
 						</motion.div>
 					))}
