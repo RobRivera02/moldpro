@@ -268,7 +268,7 @@ export function Hero() {
 								delay: 0.7,
 							}}>
 							<motion.h1 className="font-primary text-6xl md:text-8xl text-[bisque] drop-shadow-lg relative">
-								Tierra y Cafés
+								Tierra y Café
 								<motion.span
 									initial={{ width: 0 }}
 									animate={{ width: "100%" }}
