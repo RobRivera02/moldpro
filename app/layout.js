@@ -21,12 +21,16 @@ export const viewport = {
 
 // This adds default SEO tags to all pages in our app.
 // You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags();
+export const metadata = {
+	...getSEOTags(),
+	title: "MoldPro - Excelencia en Maquinados Industriales",
+	description: "Servicios de maquinado CNC, fresado, torneado y tratamiento térmico de alta precisión.",
+};
 
 export default function RootLayout({ children }) {
 	return (
 		<html
-			lang="en"
+			lang="es"
 			data-theme={config.colors.theme}
 			className={`${montserrat.variable}`}>
 			{config.domainName && (

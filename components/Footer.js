@@ -12,12 +12,12 @@ const contactInfo = [
 	},
 	{
 		icon: Mail,
-		text: "contacto@moldpro.com",
-		href: "mailto:contacto@moldpro.com",
+		text: "admin@moldpro.mx",
+		href: "mailto:admin@moldpro.mx",
 	},
 	{
 		icon: MapPin,
-		text: "Av. Industrial 123, Ciudad Industrial, CDMX",
+		text: "La casa de Sergio Carreon",
 		href: "https://maps.google.com",
 	},
 	{
@@ -29,12 +29,12 @@ const contactInfo = [
 const socialLinks = [
 	{
 		icon: Facebook,
-		href: "https://facebook.com/moldpro",
+		href: "https://www.facebook.com/moldprodynamics",
 		label: "Facebook",
 	},
 	{
 		icon: Linkedin,
-		href: "https://linkedin.com/company/moldpro",
+		href: "https://www.linkedin.com/company/moldprodynamics/",
 		label: "LinkedIn",
 	},
 ];

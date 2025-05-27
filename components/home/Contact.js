@@ -42,7 +42,7 @@ export function Contact() {
 										Correo Electrónico
 									</h3>
 									<p className="text-blue-400/80 font-tertiary">
-										info@moldpro.com
+										admin@moldpro.mx
 									</p>
 									<p className="text-blue-400/60 font-tertiary text-sm mt-1">
 										Respondemos en menos de 24 horas
@@ -61,7 +61,7 @@ export function Contact() {
 										Teléfono
 									</h3>
 									<p className="text-blue-400/80 font-tertiary">
-										+52 (55) 1234-5678
+										+52 614 353 0810
 									</p>
 									<p className="text-blue-400/60 font-tertiary text-sm mt-1">
 										Lunes a Viernes de 8:00 a 18:00
@@ -86,7 +86,7 @@ export function Contact() {
 										Col. Parque Industrial
 									</p>
 									<p className="text-blue-400/80 font-tertiary">
-										Ciudad de México, México
+										La Casa de Sergio Carreon
 									</p>
 								</div>
 							</div>
