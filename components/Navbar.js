@@ -29,8 +29,6 @@ export function Navbar() {
 	// Prevenir scroll cuando el menú está abierto
 	useEffect(() => {
 		if (isOpen) {
-			// Guardar la posición actual de scroll
-			const scrollPosition = window.scrollY;
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "unset";
@@ -44,17 +42,14 @@ export function Navbar() {
 	// Lista de secciones del sitio
 	const navLinks = [
 		{ name: "Inicio", href: "#home" },
-		{ name: "¿Por Qué Elegirnos?", href: "#about" },
-		{ name: "Servicios", href: "#features" },
-		{ name: "Nuestro Café", href: "#why-us" },
-		{ name: "Clientes", href: "#clients" },
-		{ name: "Mensaje", href: "#message" },
+		
+		{ name: "Servicios", href: "#about" },
+		
 		{ name: "Contacto", href: "#contact" },
 	];
 
 	const handleLinkClick = () => {
 		setIsOpen(false);
-		// Pequeño delay para permitir que el menú se cierre antes de navegar
 		setTimeout(() => {
 			document.body.style.overflow = "unset";
 		}, 300);
@@ -64,24 +59,24 @@ export function Navbar() {
 		<header
 			className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
 				scrolled
-					? "bg-white/90 backdrop-blur-md shadow-sm py-3"
+					? "bg-black/90 backdrop-blur-md shadow-sm py-3"
 					: "bg-transparent py-5"
 			}`}>
 			<div className="container mx-auto px-4 flex justify-between items-center">
 				{/* Logo */}
 				<Link href="#home" className="relative z-10 flex items-center">
 					<Image
-						src="/images/clients/logo7.png"
-						alt="Tierra y Café Logo"
+						src="/images/logo.png"
+						alt="MoldPro Logo"
 						width={50}
 						height={50}
 						className="mr-2"
 					/>
 					<span
 						className={`font-primary text-xl md:text-2xl ${
-							scrolled || isOpen ? "text-amazon" : "text-white"
+							scrolled || isOpen ? "text-blue-400" : "text-white"
 						}`}>
-						Tierra y Café
+						MoldPro
 					</span>
 				</Link>
 
@@ -91,8 +86,8 @@ export function Navbar() {
 						<Link
 							key={link.name}
 							href={link.href}
-							className={`font-tertiary hover:text-amazon transition-colors ${
-								scrolled ? "text-black/80" : "text-white"
+							className={`font-tertiary hover:text-blue-400 transition-colors ${
+								scrolled ? "text-blue-400/80" : "text-white"
 							}`}>
 							{link.name}
 						</Link>
@@ -105,10 +100,10 @@ export function Navbar() {
 					onClick={() => setIsOpen(!isOpen)}
 					aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}>
 					{isOpen ? (
-						<X className="w-7 h-7 text-black" />
+						<X className="w-7 h-7 text-blue-400" />
 					) : (
 						<Menu
-							className={`w-7 h-7 ${scrolled ? "text-black" : "text-white"}`}
+							className={`w-7 h-7 ${scrolled ? "text-blue-400" : "text-white"}`}
 						/>
 					)}
 				</button>
@@ -117,7 +112,7 @@ export function Navbar() {
 				<AnimatePresence>
 					{isOpen && (
 						<motion.div
-							className="fixed inset-0 bg-white z-[100] flex flex-col overflow-y-auto"
+							className="fixed inset-0 bg-black z-[100] flex flex-col overflow-y-auto"
 							initial={{ opacity: 0, x: "100%" }}
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: "100%" }}
@@ -140,7 +135,7 @@ export function Navbar() {
 								className="absolute top-4 right-4 focus:outline-none w-10 h-10 flex items-center justify-center z-[110]"
 								onClick={() => setIsOpen(false)}
 								aria-label="Cerrar menú">
-								<X className="w-7 h-7 text-amazon" />
+								<X className="w-7 h-7 text-blue-400" />
 							</button>
 
 							<div className="flex-1 flex flex-col p-6 pt-16">
@@ -151,13 +146,13 @@ export function Navbar() {
 											initial={{ opacity: 0, x: 50 }}
 											animate={{ opacity: 1, x: 0 }}
 											transition={{ delay: 0.1 + index * 0.1 }}
-											className="py-3 border-b border-black/10">
+											className="py-3 border-b border-blue-400/10">
 											<Link
 												href={link.href}
-												className="text-amazon text-xl font-quaternary hover:text-black/80 transition-colors flex justify-between items-center w-full"
+												className="text-blue-400 text-xl font-quaternary hover:text-blue-300 transition-colors flex justify-between items-center w-full"
 												onClick={handleLinkClick}>
 												<span>{link.name}</span>
-												<ChevronRight className="w-5 h-5 text-amazon/70" />
+												<ChevronRight className="w-5 h-5 text-blue-400/70" />
 											</Link>
 										</motion.div>
 									))}
@@ -169,13 +164,13 @@ export function Navbar() {
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ delay: 0.8 }}
-									className="bg-amazon/5 rounded-lg p-4">
-									<p className="text-center text-amazon font-tertiary font-medium mb-2">
-										¿Listo para empezar?
+									className="bg-blue-400/5 rounded-lg p-4">
+									<p className="text-center text-blue-400 font-tertiary font-medium mb-2">
+										¿Necesitas nuestros servicios?
 									</p>
 									<Link
 										href="#contact"
-										className="block w-full py-3 bg-amazon text-white text-center rounded-lg font-tertiary transition-colors hover:bg-amazon/90"
+										className="block w-full py-3 bg-blue-400 text-white text-center rounded-lg font-tertiary transition-colors hover:bg-blue-500"
 										onClick={handleLinkClick}>
 										Contáctanos
 									</Link>
@@ -186,8 +181,8 @@ export function Navbar() {
 									animate={{ opacity: 1 }}
 									transition={{ delay: 1 }}
 									className="mt-6 text-center">
-									<p className="text-sm text-black/60 font-tertiary">
-										Tierra y Café - Proveeduría para bebidas
+									<p className="text-sm text-blue-400/60 font-tertiary">
+										MoldPro - Excelencia en Maquinados Industriales
 									</p>
 								</motion.div>
 							</div>

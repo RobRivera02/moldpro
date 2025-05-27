@@ -6,16 +6,14 @@ import Image from "next/image";
 
 export function Carousel() {
 	const clientLogos = [
-		{ name: "Cliente 1", logo: "/images/clients/logo1.png" },
-		{ name: "Cliente 2", logo: "/images/clients/logo2.png" },
-		{ name: "Cliente 3", logo: "/images/clients/logo3.png" },
-		{ name: "Cliente 4", logo: "/images/clients/logo4.png" },
-		{ name: "Cliente 5", logo: "/images/clients/logo5.png" },
-		{ name: "Cliente 6", logo: "/images/clients/logo6.png" },
-		{ name: "Cliente 7", logo: "/images/clients/logo7.png" },
-		{ name: "Cliente 8", logo: "/images/clients/logo8.png" },
-		{ name: "Cliente 9", logo: "/images/clients/logo9.png" },
-		{ name: "Cliente 10", logo: "/images/clients/logo10.png" },
+		{ name: "Cliente 1", logo: "/images/moldpro/l1.png" },
+		{ name: "Cliente 2", logo: "/images/moldpro/l2.png" },
+		{ name: "Cliente 3", logo: "/images/moldpro/l3.png" },
+		{ name: "Cliente 4", logo: "/images/moldpro/l4.png" },
+		{ name: "Cliente 5", logo: "/images/moldpro/l5.png" },
+		{ name: "Cliente 6", logo: "/images/moldpro/l6.png" },
+		{ name: "Cliente 7", logo: "/images/moldpro/l7.png" },
+	
 	];
 	
 	// Duplicate the logos for seamless looping
@@ -28,7 +26,7 @@ export function Carousel() {
 			
 			<div className="container mx-auto px-6 relative mb-8">
 				<h2 className="text-[black] text-3xl md:text-4xl font-primary text-center mb-10">
-					Nuestros Clientes
+					Nuestros Clientes Y Proyectos
 				</h2>
 			</div>
 			
