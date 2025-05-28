@@ -39,8 +39,8 @@ const testimonials = [
 
 export function Testimonials() {
 	return (
-		<section className="bg-black py-32 relative">
-			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
+		<section className="bg-black py-20">
+			<h2 className="text-[#ff8000] text-4xl md:text-5xl font-primary uppercase mb-10 text-center">Testimonios</h2>
 
 			<div className="container mx-auto px-6 relative">
 				<motion.div
@@ -49,9 +49,6 @@ export function Testimonials() {
 					transition={{ duration: 0.8 }}
 					viewport={{ once: true }}
 					className="text-center mb-24">
-					<h2 className="text-blue-400 text-5xl md:text-6xl font-primary mb-6 tracking-wide drop-shadow-sm">
-						Lo Que Dicen Nuestros Clientes
-					</h2>
 					<div className="w-24 h-[2px] bg-gradient-to-r from-blue-500/5 via-blue-500/30 to-blue-500/5 mx-auto mb-8" />
 					<p className="text-blue-400/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						Descubre por qué las empresas líderes en la industria confían en
@@ -89,12 +86,9 @@ export function Testimonials() {
 									</p>
 								</div>
 							</div>
-							<div className="flex gap-1 mb-4">
+							<div className="flex items-center gap-1">
 								{[...Array(testimonial.rating)].map((_, i) => (
-									<Star
-										key={i}
-										className="w-5 h-5 text-blue-400 fill-blue-400"
-									/>
+									<Star key={i} className="w-5 h-5 text-[#ff8000]" />
 								))}
 							</div>
 							<p className="text-blue-400/80 font-tertiary leading-relaxed">

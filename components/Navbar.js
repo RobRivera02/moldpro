@@ -73,9 +73,7 @@ export function Navbar() {
 						className="mr-2"
 					/>
 					<span
-						className={`font-primary text-xl md:text-2xl ${
-							scrolled || isOpen ? "text-blue-400" : "text-white"
-						}`}>
+						className={`font-primary text-xl md:text-2xl text-white`}>
 						MoldPro
 					</span>
 				</Link>
@@ -86,9 +84,7 @@ export function Navbar() {
 						<Link
 							key={link.name}
 							href={link.href}
-							className={`font-tertiary hover:text-blue-400 transition-colors ${
-								scrolled ? "text-blue-400/80" : "text-white"
-							}`}>
+							className="font-tertiary text-white hover:text-[#ff8000] transition-colors">
 							{link.name}
 						</Link>
 					))}
@@ -100,10 +96,10 @@ export function Navbar() {
 					onClick={() => setIsOpen(!isOpen)}
 					aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}>
 					{isOpen ? (
-						<X className="w-7 h-7 text-blue-400" />
+						<X className="w-7 h-7 text-[#ff8000]" />
 					) : (
 						<Menu
-							className={`w-7 h-7 ${scrolled ? "text-blue-400" : "text-white"}`}
+							className={`w-7 h-7 text-white`}
 						/>
 					)}
 				</button>
@@ -135,7 +131,7 @@ export function Navbar() {
 								className="absolute top-4 right-4 focus:outline-none w-10 h-10 flex items-center justify-center z-[110]"
 								onClick={() => setIsOpen(false)}
 								aria-label="Cerrar menú">
-								<X className="w-7 h-7 text-blue-400" />
+								<X className="w-7 h-7 text-[#ff8000]" />
 							</button>
 
 							<div className="flex-1 flex flex-col p-6 pt-16">
@@ -146,13 +142,13 @@ export function Navbar() {
 											initial={{ opacity: 0, x: 50 }}
 											animate={{ opacity: 1, x: 0 }}
 											transition={{ delay: 0.1 + index * 0.1 }}
-											className="py-3 border-b border-blue-400/10">
+											className="py-3 border-b border-[#ff8000]/10">
 											<Link
 												href={link.href}
-												className="text-blue-400 text-xl font-quaternary hover:text-blue-300 transition-colors flex justify-between items-center w-full"
+												className="text-white text-xl font-quaternary hover:text-[#ff8000] transition-colors flex justify-between items-center w-full"
 												onClick={handleLinkClick}>
 												<span>{link.name}</span>
-												<ChevronRight className="w-5 h-5 text-blue-400/70" />
+												<ChevronRight className="w-5 h-5 text-[#ff8000]/70" />
 											</Link>
 										</motion.div>
 									))}
@@ -164,13 +160,13 @@ export function Navbar() {
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ delay: 0.8 }}
-									className="bg-blue-400/5 rounded-lg p-4">
-									<p className="text-center text-blue-400 font-tertiary font-medium mb-2">
+									className="bg-[#ff8000]/5 rounded-lg p-4">
+									<p className="text-center text-white font-tertiary font-medium mb-2">
 										¿Necesitas nuestros servicios?
 									</p>
 									<Link
 										href="#contact"
-										className="block w-full py-3 bg-blue-400 text-white text-center rounded-lg font-tertiary transition-colors hover:bg-blue-500"
+										className="block w-full py-3 bg-[#ff8000] text-white text-center rounded-lg font-tertiary transition-colors hover:bg-white hover:text-[#ff8000]"
 										onClick={handleLinkClick}>
 										Contáctanos
 									</Link>
@@ -181,7 +177,7 @@ export function Navbar() {
 									animate={{ opacity: 1 }}
 									transition={{ delay: 1 }}
 									className="mt-6 text-center">
-									<p className="text-sm text-blue-400/60 font-tertiary">
+									<p className="text-sm text-[#ff8000]/80 font-tertiary">
 										MoldPro - Excelencia en Maquinados Industriales
 									</p>
 								</motion.div>

@@ -20,12 +20,12 @@ export function Carousel() {
 	const logosDuplicated = [...clientLogos, ...clientLogos];
 	
 	return (
-		<section className="py-16 overflow-hidden bg-white relative">
+		<section className="py-16 overflow-hidden bg-black relative">
 			{/* Background subtle pattern */}
-			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-3 mix-blend-overlay" />
+			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
 			
 			<div className="container mx-auto px-6 relative mb-8">
-				<h2 className="text-[black] text-3xl md:text-4xl font-primary text-center mb-10">
+				<h2 className="text-[#ff8000] text-3xl md:text-4xl font-primary text-center mb-10 uppercase">
 					Nuestros Clientes Y Proyectos
 				</h2>
 			</div>

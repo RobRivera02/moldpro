@@ -67,11 +67,11 @@ export function About() {
 					viewport={{ once: true }}
 					transition={{ duration: 0.8 }}
 					className="text-center mb-12 md:mb-20">
-					<h2 className="text-blue-400 text-4xl sm:text-5xl md:text-6xl font-primary mb-4 md:mb-6 tracking-wide filter drop-shadow-sm">
+					<h2 className="text-[#ff8000] text-4xl sm:text-5xl md:text-6xl font-primary mb-4 md:mb-6 tracking-wide uppercase">
 						¿Por Qué Elegirnos?
 					</h2>
 					<div className="w-20 md:w-24 h-[2px] bg-gradient-to-r from-blue-500/5 via-blue-500/30 to-blue-500/5 mx-auto mb-6 md:mb-8" />
-					<p className="text-blue-400/80 max-w-2xl mx-auto font-tertiary text-base sm:text-lg leading-relaxed px-2 italic">
+					<p className="text-white/80 max-w-2xl mx-auto font-tertiary text-base sm:text-lg leading-relaxed px-2 italic">
 						En MoldPro no solo fabricamos piezas, creamos soluciones industriales
 						que impulsan el éxito de tu negocio.
 					</p>
@@ -138,7 +138,7 @@ export function About() {
 											}}
 										/>
 									)}
-									<span className="relative z-10 flex items-center text-sm sm:text-base">
+									<span className={`relative z-10 flex items-center text-sm sm:text-base ${activeTab === idx ? 'text-[#ff8000]' : 'text-white/60 hover:text-white/80'}`}>
 										<span className="mr-2">{benefit.icon}</span> {benefit.title}
 									</span>
 								</motion.button>
@@ -167,7 +167,7 @@ export function About() {
 												e.target.src = '/images/fallback.jpg';
 											}}
 										/>
-										<div className="absolute inset-0 bg-gradient-to-t from-blue-500/80 to-transparent opacity-60" />
+										<div className="absolute inset-0 bg-gradient-to-t from-[#ff8000]/80 to-transparent opacity-60" />
 									</div>
 								</div>
 								<div className="w-full md:w-1/2 p-8">
@@ -180,15 +180,15 @@ export function About() {
 											<span className="text-4xl mr-4">
 												{benefits[activeTab].icon}
 											</span>
-											<h3 className="text-blue-400 font-secondary text-3xl">
+											<h3 className="text-white font-secondary text-3xl uppercase">
 												{benefits[activeTab].title}
 											</h3>
 										</div>
-										<p className="text-blue-400/80 font-tertiary text-lg leading-relaxed">
+										<p className="text-white/80 font-tertiary text-lg leading-relaxed">
 											{benefits[activeTab].description}
 										</p>
 										<motion.button
-											className="mt-8 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 py-2.5 px-5 rounded-full border border-blue-500/20 font-tertiary flex items-center"
+											className="mt-8 bg-[#ff8000] hover:bg-white hover:text-[#ff8000] text-white py-2.5 px-5 rounded-full border-2 border-[#ff8000] font-tertiary flex items-center uppercase font-bold transition-all duration-300"
 											whileHover={{ scale: 1.05, x: 5 }}
 											whileTap={{ scale: 0.95 }}>
 											<span>Saber más</span>
@@ -227,14 +227,14 @@ export function About() {
 									</div>
 								</div>
 								<div className="p-5">
-									<h3 className="text-blue-400 font-secondary text-2xl mb-3 flex items-center">
+									<h3 className="text-white font-secondary text-2xl mb-3 flex items-center uppercase">
 										{benefit.title}
 									</h3>
-									<p className="text-blue-400/80 font-tertiary text-sm leading-relaxed mb-4">
+									<p className="text-white/80 font-tertiary text-sm leading-relaxed mb-4">
 										{benefit.description}
 									</p>
 									<motion.button
-										className="bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 py-2 px-4 text-sm rounded-full border border-blue-500/20 font-tertiary flex items-center"
+										className="bg-[#ff8000] hover:bg-white hover:text-[#ff8000] text-white py-2 px-4 text-sm rounded-full border-2 border-[#ff8000] font-tertiary flex items-center uppercase font-bold"
 										whileHover={{ x: 5 }}
 										whileTap={{ scale: 0.95 }}>
 										<span>Saber más</span>
@@ -252,8 +252,8 @@ export function About() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.8 }}
-					className="bg-blue-500/5 backdrop-blur-sm border border-blue-500/10 rounded-xl p-6 sm:p-8 md:p-12 shadow-md hover:shadow-lg transition-all duration-300">
-					<h3 className="text-blue-400 font-secondary text-2xl sm:text-2xl md:text-3xl mb-6 md:mb-8 text-center">
+					className="bg-[#ff8000]/5 backdrop-blur-sm border border-[#ff8000]/20 rounded-xl p-6 sm:p-8 md:p-12 shadow-md hover:shadow-lg transition-all duration-300">
+					<h3 className="text-[#ff8000] font-secondary text-2xl sm:text-2xl md:text-3xl mb-6 md:mb-8 text-center uppercase">
 					Ingeniería y Diseño (CAE, CAD, CAM)
 					</h3>
 
@@ -272,7 +272,7 @@ export function About() {
 										<Check className="w-3.5 h-3.5 md:w-5 md:h-5 text-blue-400" />
 									</div>
 								</div>
-								<p className="text-blue-400/90 font-tertiary text-sm sm:text-base md:text-lg">
+								<p className="text-white/90 font-tertiary text-sm sm:text-base md:text-lg">
 									{feature}
 								</p>
 							</motion.div>
@@ -282,7 +282,7 @@ export function About() {
 					<div className="mt-8 md:mt-10 flex justify-center">
 						<motion.a
 							href="#contact"
-							className="bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 py-2.5 px-5 md:py-3 md:px-6 rounded-full border border-blue-500/20 font-tertiary transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
+							className="bg-[#ff8000] hover:bg-white hover:text-[#ff8000] text-white py-2.5 px-5 md:py-3 md:px-6 rounded-full border-2 border-[#ff8000] font-tertiary transition-all duration-300 flex items-center gap-2 text-sm sm:text-base uppercase font-bold"
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}>
 							<span>Contáctanos para más información</span>

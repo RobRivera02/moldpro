@@ -5,6 +5,9 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* It makes the HTML progress bar filling smooth when value change. */
@@ -162,4 +165,69 @@ progress::-webkit-progress-value {
 
 .animation-delay-600 {
   animation-delay: 600ms;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s;
+  background: none !important;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ff8000;
+  background: none !important;
+  text-decoration: none;
+}
+
+button, .btn, .Button {
+  background: #ff8000;
+  color: #fff;
+  border: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.75em 2em;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 #ff800033;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+button:hover, .btn:hover, .Button:hover {
+  background: #fff;
+  color: #ff8000;
+  box-shadow: 0 4px 16px 0 #ff800055;
+}
+
+input, textarea, select {
+  background: #111;
+  color: #fff;
+  border: 1.5px solid #ff8000;
+  border-radius: 6px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #222;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff8000;
+  border-radius: 8px;
+}
+
+/* Otros detalles visuales */
+hr {
+  border-color: #ff8000;
+}
+
+/* Asegura que los backgrounds de secciones sean negros */
+section, header, footer, nav {
+  background: #000 !important;
 }

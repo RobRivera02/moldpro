@@ -41,70 +41,24 @@ const socialLinks = [
 
 export default function Footer() {
 	return (
-		<footer className="bg-black text-blue-400 py-12 relative">
-			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
-			
-			<div className="container mx-auto px-4 relative">
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-					{/* Logo y Redes Sociales */}
-					<div className="space-y-6">
-						<Link href="#home" className="flex items-center">
-							<Image
-								src="/images/logo.png"
-								alt="MoldPro Logo"
-								width={50}
-								height={50}
-								className="mr-2"
-							/>
-							<span className="font-primary text-2xl">MoldPro</span>
-						</Link>
-						<div className="flex items-center space-x-6">
-							{socialLinks.map((social) => (
-								<a
-									key={social.label}
-									href={social.href}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-blue-400/60 hover:text-blue-300 transition-colors"
-									aria-label={social.label}>
-									<social.icon className="w-6 h-6" />
-								</a>
-							))}
-						</div>
-					</div>
-
-					{/* Contacto */}
-					<div>
-						<h3 className="text-blue-400 font-secondary text-lg mb-6">Contacto</h3>
-						<ul className="space-y-4">
-							{contactInfo.map((item, index) => (
-								<li key={index} className="flex items-start space-x-4">
-									<item.icon className="w-6 h-6 text-blue-400/60 mt-0.5" />
-									{item.href ? (
-										<a
-											href={item.href}
-											className="text-blue-400/80 hover:text-blue-300 transition-colors font-tertiary text-base">
-											{item.text}
-										</a>
-									) : (
-										<span className="text-blue-400/80 font-tertiary text-base">
-											{item.text}
-										</span>
-									)}
-								</li>
-							))}
-						</ul>
+		<footer className="w-full bg-black border-t-2 border-[#ff8000] py-10 px-4">
+			<div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+				<div className="flex flex-col items-center md:items-start gap-3">
+					<Image src="/images/logo.png" alt="MoldPro Logo" width={60} height={60} />
+					<span className="text-2xl font-bold text-white tracking-widest uppercase font-primary">MOLDPRO</span>
+					<div className="flex gap-4 mt-2">
+						{socialLinks.map((link) => (
+							<a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label} className="text-[#ff8000] hover:text-white text-2xl transition-colors duration-200">
+								<link.icon />
+							</a>
+						))}
 					</div>
 				</div>
-
-				{/* Línea divisoria */}
-				<div className="w-full h-[1px] bg-gradient-to-r from-blue-500/5 via-blue-500/30 to-blue-500/5 my-8" />
-
-				{/* Copyright */}
-				<div className="text-center">
-					<p className="text-blue-400/60 font-tertiary text-sm">
-						© {new Date().getFullYear()} MoldPro. Todos los derechos reservados.
-					</p>
+				<div className="text-white text-center md:text-right font-secondary">
+					<p className="mb-2">Tel: <span className="text-[#ff8000] font-bold">+52 123 456 7890</span></p>
+					<p className="mb-2">Email: <span className="text-[#ff8000] font-bold">contacto@moldpro.com</span></p>
+					<p className="mb-2">Dirección: <span className="text-[#ff8000] font-bold">Parque Industrial, CDMX</span></p>
+					<p className="text-xs text-[#ff8000] mt-4">&copy; {new Date().getFullYear()} MoldPro. Todos los derechos reservados.</p>
 				</div>
 			</div>
 		</footer>

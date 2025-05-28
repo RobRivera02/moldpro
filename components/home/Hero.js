@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import React from "react";
 
 export function Hero() {
 	return (
@@ -10,7 +11,7 @@ export function Hero() {
 			{/* Background Image with Parallax Effect */}
 			<div className="absolute inset-0 z-0">
 				<Image
-					src="https://images.unsplash.com/photo-1627807452502-0c8329fc710b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					src="/images/moldpro/pro.jpg"
 					alt="Maquinado industrial"
 					fill
 					className="object-cover brightness-[0.4] scale-110 transition-all duration-700 hover:scale-105"
@@ -48,13 +49,13 @@ export function Hero() {
 								duration: 0.8,
 								delay: 0.7,
 							}}>
-							<motion.h1 className="font-primary text-7xl md:text-9xl text-blue-400 drop-shadow-lg relative">
+							<motion.h1 className="font-primary text-7xl md:text-9xl text-white drop-shadow-lg relative">
 								MoldPro
 								<motion.span
 									initial={{ width: 0 }}
 									animate={{ width: "100%" }}
 									transition={{ duration: 0.8, delay: 1.2 }}
-									className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-blue-500/0 via-blue-500 to-blue-500/0 rounded-full"
+									className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-[#ff8000]/0 via-[#ff8000] to-[#ff8000]/0 rounded-full"
 								/>
 							</motion.h1>
 						</motion.div>
@@ -66,7 +67,7 @@ export function Hero() {
 								y: 0,
 							}}
 							transition={{ duration: 0.8, delay: 1 }}
-							className="font-tertiary text-2xl md:text-4xl max-w-3xl text-blue-400/90 drop-shadow-md leading-relaxed">
+							className="font-tertiary text-2xl md:text-4xl max-w-3xl text-white/90 drop-shadow-md leading-relaxed">
 							Impulsando la innovación industrial con precisión y propósito
 						</motion.p>
 
@@ -80,7 +81,7 @@ export function Hero() {
 							className="mt-8">
 							<Button
 								variant="outline"
-								className="bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border-blue-500/20 px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105">
+								className="bg-[#ff8000]/10 hover:bg-[#ff8000]/20 text-[#ff8000] border-[#ff8000]/20 px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105">
 								Conoce Nuestros Servicios
 							</Button>
 						</motion.div>
@@ -107,7 +108,7 @@ export function Hero() {
 						ease: "easeInOut",
 					}}
 					className="relative">
-					<div className="w-8 h-8 border-r-4 border-b-4 border-blue-400 rotate-45 transform -translate-y-1/2" />
+					<div className="w-8 h-8 border-r-4 border-b-4 border-[#ff8000] rotate-45 transform -translate-y-1/2" />
 				</motion.div>
 			</motion.div>
 		</section>

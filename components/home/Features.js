@@ -97,9 +97,8 @@ export function Features() {
 	const GridFeatures = features.slice(2);
 
 	return (
-		<section className="bg-black py-32 relative">
-			<div className="absolute inset-0 bg-[url('/images/texture.png')] opacity-5 mix-blend-overlay" />
-
+		<section className="bg-black py-20">
+			<h2 className="text-[#ff8000] text-4xl md:text-5xl font-primary uppercase mb-10 text-center">Nuestros Servicios</h2>
 			<div className="container mx-auto px-6 relative">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
@@ -107,9 +106,6 @@ export function Features() {
 					transition={{ duration: 0.8 }}
 					viewport={{ once: true }}
 					className="text-center mb-24">
-					<h2 className="text-blue-400 text-5xl md:text-6xl font-primary mb-6 tracking-wide drop-shadow-sm">
-						Nuestros Servicios
-					</h2>
 					<div className="w-24 h-[2px] bg-gradient-to-r from-blue-500/5 via-blue-500/30 to-blue-500/5 mx-auto mb-8" />
 					<p className="text-blue-400/80 max-w-2xl mx-auto font-tertiary text-lg leading-relaxed">
 						Descubre cómo podemos ayudarte a llevar tu proyecto al siguiente nivel
