@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Building, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Building } from "lucide-react";
 
 export function Contact() {
 	return (
@@ -77,8 +77,7 @@ export function Contact() {
 										C. Yeseros #215, Col. 2 de Junio
 									</p>
 									<p className="text-white/80 font-tertiary">
-									    C.P. 31134 
-
+										C.P. 31134
 									</p>
 									<p className="text-white/80 font-tertiary">
 										Chihuahua, Chih.
@@ -95,7 +94,7 @@ export function Contact() {
 								<div>
 									<h3 className="text-white font-secondary text-xl mb-2 uppercase">Horario de Atención</h3>
 									<p className="text-white/80 font-tertiary">
-										Lunes a Viernes: 8:00 - 18:00
+										Lunes a Viernes: 9:00 - 18:00
 									</p>
 									<p className="text-white/80 font-tertiary">
 										Sábados: 9:00 - 14:00

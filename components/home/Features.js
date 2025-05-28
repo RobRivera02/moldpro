@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Settings, Wrench, Lightbulb, Shield, Tool, Users } from "lucide-react";
+import { Settings, Wrench, Lightbulb, Shield, Tools, Users } from "lucide-react";
 import Image from "next/image";
 
 const features = [
@@ -53,7 +53,7 @@ const features = [
 		title: "Asesoría Técnica",
 		description:
 			"Asesoría especializada en selección de materiales, procesos y optimización de diseños para tu proyecto.",
-		icon: "Tool",
+		icon: "Tools",
 		details: [
 			"Selección de materiales",
 			"Optimización de procesos",
@@ -83,7 +83,7 @@ const IconComponent = ({ name, className }) => {
 		Wrench,
 		Lightbulb,
 		Shield,
-		Tool,
+		Tools,
 		Users,
 	};
 

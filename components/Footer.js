@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Clock, Facebook, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { Clock, Facebook, Linkedin } from "lucide-react";
 
 const contactInfo = [
 	{
