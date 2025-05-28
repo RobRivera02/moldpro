@@ -26,8 +26,7 @@ export const metadata = {
 	title: "MoldPro - Excelencia en Maquinados Industriales",
 	description: "Servicios de maquinado CNC, fresado, torneado y tratamiento térmico de alta precisión",
 	icons: {
-		icon: "images/moldpro/pro.ico", // o '/favicon.png' si usas PNG
-		apple: "/images/moldpro/logo.ico", // opcional: para dispositivos Apple
+		icon: "/images/moldpro/pro.ico",
 	},
 };
 
