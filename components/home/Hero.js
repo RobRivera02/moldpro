@@ -11,7 +11,7 @@ export function Hero() {
 			{/* Background Image with Parallax Effect */}
 			<div className="absolute inset-0 z-0">
 				<Image
-					src="/images/moldpro/pro.jpg"
+					src="/images/moldpro/reco1.jpg"
 					alt="Maquinado industrial"
 					fill
 					className="object-cover brightness-[0.4] scale-110 transition-all duration-700 hover:scale-105"

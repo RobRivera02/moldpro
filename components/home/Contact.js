@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Building, Globe } from "lucide-react";
 
 export function Contact() {
 	return (
@@ -74,13 +74,14 @@ export function Contact() {
 								<div>
 									<h3 className="text-white font-secondary text-xl mb-2 uppercase">Ubicación</h3>
 									<p className="text-white/80 font-tertiary">
-										Av. Industrial 123
+										C. Yeseros #215, Col. 2 de Junio
 									</p>
 									<p className="text-white/80 font-tertiary">
-										Col. Parque Industrial
+									    C.P. 31134 
+
 									</p>
 									<p className="text-white/80 font-tertiary">
-										La Casa de Sergio Carreon
+										Chihuahua, Chih.
 									</p>
 								</div>
 							</div>
@@ -112,70 +113,36 @@ export function Contact() {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.6 }}
 						viewport={{ once: true }}
-						className="bg-[#ff8000]/5 backdrop-blur-sm border border-[#ff8000]/20 rounded-xl p-8">
-						<form className="space-y-6">
-							<div>
-								<label
-									htmlFor="name"
-									className="block text-white font-secondary text-sm mb-2 uppercase">
-									Nombre Completo
-								</label>
-								<input
-									type="text"
-									id="name"
-									className="w-full bg-[#ff8000]/5 border border-[#ff8000]/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff8000]/20 focus:border-transparent transition-all duration-300"
-									placeholder="Ingresa tu nombre"
-								/>
+						className="space-y-8">
+						<div className="bg-[#ff8000]/5 backdrop-blur-sm border border-[#ff8000]/20 rounded-xl p-8 hover:bg-[#ff8000]/10 transition-all duration-500">
+							<div className="flex items-start gap-4">
+								<div className="bg-[#ff8000]/10 p-3 rounded-lg">
+									<Building className="w-6 h-6 text-[#ff8000]" />
+								</div>
+								<div>
+									<h3 className="text-white font-secondary text-xl mb-2 uppercase">Nuestra Empresa</h3>
+									<p className="text-white/80 font-tertiary">
+										MoldPro es líder en maquinados industriales de alta precisión, ofreciendo soluciones integrales para la industria manufacturera.
+									</p>
+									
+								</div>
 							</div>
+						</div>
 
-							<div>
-								<label
-									htmlFor="email"
-									className="block text-white font-secondary text-sm mb-2 uppercase">
-									Correo Electrónico
-								</label>
-								<input
-									type="email"
-									id="email"
-									className="w-full bg-[#ff8000]/5 border border-[#ff8000]/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff8000]/20 focus:border-transparent transition-all duration-300"
-									placeholder="Ingresa tu correo"
-								/>
-							</div>
+					
 
-							<div>
-								<label
-									htmlFor="company"
-									className="block text-white font-secondary text-sm mb-2 uppercase">
-									Empresa
-								</label>
-								<input
-									type="text"
-									id="company"
-									className="w-full bg-[#ff8000]/5 border border-[#ff8000]/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff8000]/20 focus:border-transparent transition-all duration-300"
-									placeholder="Ingresa el nombre de tu empresa"
-								/>
-							</div>
-
-							<div>
-								<label
-									htmlFor="message"
-									className="block text-white font-secondary text-sm mb-2 uppercase">
-									Mensaje
-								</label>
-								<textarea
-									id="message"
-									rows={4}
-									className="w-full bg-[#ff8000]/5 border border-[#ff8000]/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff8000]/20 focus:border-transparent transition-all duration-300"
-									placeholder="Describe tu proyecto o consulta"
-								/>
-							</div>
-
-							<button
-								type="submit"
-								className="w-full mt-6 bg-[#ff8000] text-white font-bold py-3 rounded-full uppercase border-2 border-[#ff8000] hover:bg-white hover:text-[#ff8000] transition-all duration-200">
-								Enviar mensaje
-							</button>
-						</form>
+						<div className="bg-[#ff8000]/5 backdrop-blur-sm border border-[#ff8000]/20 rounded-xl overflow-hidden">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.73163771811!2d-106.09217868928619!3d28.697673275527602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43bf904b119b%3A0xe85de12051b029a4!2sYeseros%20215%2C%20Dos%20de%20Junio%2C%2031134%20Chihuahua%2C%20Chih.!5e0!3m2!1ses!2smx!4v1748457113334!5m2!1ses!2smx"
+								width="100%"
+								height="300"
+								style={{ border: 0 }}
+								allowFullScreen=""
+								loading="lazy"
+								referrerPolicy="no-referrer-when-downgrade"
+								className="w-full h-[300px]"
+							/>
+						</div>
 					</motion.div>
 				</div>
 			</div>

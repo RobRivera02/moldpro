@@ -187,13 +187,6 @@ export function About() {
 										<p className="text-white/80 font-tertiary text-lg leading-relaxed">
 											{benefits[activeTab].description}
 										</p>
-										<motion.button
-											className="mt-8 bg-[#ff8000] hover:bg-white hover:text-[#ff8000] text-white py-2.5 px-5 rounded-full border-2 border-[#ff8000] font-tertiary flex items-center uppercase font-bold transition-all duration-300"
-											whileHover={{ scale: 1.05, x: 5 }}
-											whileTap={{ scale: 0.95 }}>
-											<span>Saber más</span>
-											<ChevronRight className="w-4 h-4 ml-2" />
-										</motion.button>
 									</motion.div>
 								</div>
 							</div>
@@ -233,13 +226,6 @@ export function About() {
 									<p className="text-white/80 font-tertiary text-sm leading-relaxed mb-4">
 										{benefit.description}
 									</p>
-									<motion.button
-										className="bg-[#ff8000] hover:bg-white hover:text-[#ff8000] text-white py-2 px-4 text-sm rounded-full border-2 border-[#ff8000] font-tertiary flex items-center uppercase font-bold"
-										whileHover={{ x: 5 }}
-										whileTap={{ scale: 0.95 }}>
-										<span>Saber más</span>
-										<ChevronRight className="w-3.5 h-3.5 ml-2" />
-									</motion.button>
 								</div>
 							</motion.div>
 						))}

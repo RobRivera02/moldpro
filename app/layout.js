@@ -24,7 +24,11 @@ export const viewport = {
 export const metadata = {
 	...getSEOTags(),
 	title: "MoldPro - Excelencia en Maquinados Industriales",
-	description: "Servicios de maquinado CNC, fresado, torneado y tratamiento térmico de alta precisión.",
+	description: "Servicios de maquinado CNC, fresado, torneado y tratamiento térmico de alta precisión",
+	icons: {
+		icon: "/public/images/moldpro/pro.ico", // o '/favicon.png' si usas PNG
+		apple: "/public/images/moldpro/logo.ico", // opcional: para dispositivos Apple
+	},
 };
 
 export default function RootLayout({ children }) {

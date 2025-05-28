@@ -66,7 +66,7 @@ export function Navbar() {
 				{/* Logo */}
 				<Link href="#home" className="relative z-10 flex items-center">
 					<Image
-						src="/images/logo.png"
+						src="/images/moldpro/pro.jpg"
 						alt="MoldPro Logo"
 						width={50}
 						height={50}
